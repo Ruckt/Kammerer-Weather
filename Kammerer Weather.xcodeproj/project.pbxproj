@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E8F2E4AF2BC9FBC400A139A1 /* Kammerer_WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4AE2BC9FBC400A139A1 /* Kammerer_WeatherApp.swift */; };
+		E8F2E4B12BC9FBC400A139A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4B02BC9FBC400A139A1 /* ContentView.swift */; };
+		E8F2E4B32BC9FBC600A139A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8F2E4B22BC9FBC600A139A1 /* Assets.xcassets */; };
+		E8F2E4B62BC9FBC600A139A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8F2E4B52BC9FBC600A139A1 /* Preview Assets.xcassets */; };
+		E8F2E4C02BC9FBC700A139A1 /* Kammerer_WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4BF2BC9FBC700A139A1 /* Kammerer_WeatherTests.swift */; };
+		E8F2E4CA2BC9FBC700A139A1 /* Kammerer_WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4C92BC9FBC700A139A1 /* Kammerer_WeatherUITests.swift */; };
+		E8F2E4CC2BC9FBC700A139A1 /* Kammerer_WeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4CB2BC9FBC700A139A1 /* Kammerer_WeatherUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E8F2E4BC2BC9FBC700A139A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8F2E4A32BC9FBC400A139A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8F2E4AA2BC9FBC400A139A1;
+			remoteInfo = "Kammerer Weather";
+		};
+		E8F2E4C62BC9FBC700A139A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8F2E4A32BC9FBC400A139A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8F2E4AA2BC9FBC400A139A1;
+			remoteInfo = "Kammerer Weather";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E8F2E4AB2BC9FBC400A139A1 /* Kammerer Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kammerer Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8F2E4AE2BC9FBC400A139A1 /* Kammerer_WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kammerer_WeatherApp.swift; sourceTree = "<group>"; };
+		E8F2E4B02BC9FBC400A139A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E8F2E4B22BC9FBC600A139A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8F2E4B52BC9FBC600A139A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E8F2E4BB2BC9FBC700A139A1 /* Kammerer WeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kammerer WeatherTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8F2E4BF2BC9FBC700A139A1 /* Kammerer_WeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kammerer_WeatherTests.swift; sourceTree = "<group>"; };
+		E8F2E4C52BC9FBC700A139A1 /* Kammerer WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kammerer WeatherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8F2E4C92BC9FBC700A139A1 /* Kammerer_WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kammerer_WeatherUITests.swift; sourceTree = "<group>"; };
+		E8F2E4CB2BC9FBC700A139A1 /* Kammerer_WeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kammerer_WeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8F2E4A82BC9FBC400A139A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8F2E4B82BC9FBC700A139A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8F2E4C22BC9FBC700A139A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E8F2E4A22BC9FBC400A139A1 = {
+			isa = PBXGroup;
+			children = (
+				E8F2E4AD2BC9FBC400A139A1 /* Kammerer Weather */,
+				E8F2E4BE2BC9FBC700A139A1 /* Kammerer WeatherTests */,
+				E8F2E4C82BC9FBC700A139A1 /* Kammerer WeatherUITests */,
+				E8F2E4AC2BC9FBC400A139A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E8F2E4AC2BC9FBC400A139A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8F2E4AB2BC9FBC400A139A1 /* Kammerer Weather.app */,
+				E8F2E4BB2BC9FBC700A139A1 /* Kammerer WeatherTests.xctest */,
+				E8F2E4C52BC9FBC700A139A1 /* Kammerer WeatherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8F2E4AD2BC9FBC400A139A1 /* Kammerer Weather */ = {
+			isa = PBXGroup;
+			children = (
+				E8F2E4AE2BC9FBC400A139A1 /* Kammerer_WeatherApp.swift */,
+				E8F2E4B02BC9FBC400A139A1 /* ContentView.swift */,
+				E8F2E4B22BC9FBC600A139A1 /* Assets.xcassets */,
+				E8F2E4B42BC9FBC600A139A1 /* Preview Content */,
+			);
+			path = "Kammerer Weather";
+			sourceTree = "<group>";
+		};
+		E8F2E4B42BC9FBC600A139A1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E8F2E4B52BC9FBC600A139A1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E8F2E4BE2BC9FBC700A139A1 /* Kammerer WeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				E8F2E4BF2BC9FBC700A139A1 /* Kammerer_WeatherTests.swift */,
+			);
+			path = "Kammerer WeatherTests";
+			sourceTree = "<group>";
+		};
+		E8F2E4C82BC9FBC700A139A1 /* Kammerer WeatherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E8F2E4C92BC9FBC700A139A1 /* Kammerer_WeatherUITests.swift */,
+				E8F2E4CB2BC9FBC700A139A1 /* Kammerer_WeatherUITestsLaunchTests.swift */,
+			);
+			path = "Kammerer WeatherUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8F2E4AA2BC9FBC400A139A1 /* Kammerer Weather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8F2E4CF2BC9FBC700A139A1 /* Build configuration list for PBXNativeTarget "Kammerer Weather" */;
+			buildPhases = (
+				E8F2E4A72BC9FBC400A139A1 /* Sources */,
+				E8F2E4A82BC9FBC400A139A1 /* Frameworks */,
+				E8F2E4A92BC9FBC400A139A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kammerer Weather";
+			productName = "Kammerer Weather";
+			productReference = E8F2E4AB2BC9FBC400A139A1 /* Kammerer Weather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E8F2E4BA2BC9FBC700A139A1 /* Kammerer WeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8F2E4D22BC9FBC700A139A1 /* Build configuration list for PBXNativeTarget "Kammerer WeatherTests" */;
+			buildPhases = (
+				E8F2E4B72BC9FBC700A139A1 /* Sources */,
+				E8F2E4B82BC9FBC700A139A1 /* Frameworks */,
+				E8F2E4B92BC9FBC700A139A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8F2E4BD2BC9FBC700A139A1 /* PBXTargetDependency */,
+			);
+			name = "Kammerer WeatherTests";
+			productName = "Kammerer WeatherTests";
+			productReference = E8F2E4BB2BC9FBC700A139A1 /* Kammerer WeatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E8F2E4C42BC9FBC700A139A1 /* Kammerer WeatherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8F2E4D52BC9FBC700A139A1 /* Build configuration list for PBXNativeTarget "Kammerer WeatherUITests" */;
+			buildPhases = (
+				E8F2E4C12BC9FBC700A139A1 /* Sources */,
+				E8F2E4C22BC9FBC700A139A1 /* Frameworks */,
+				E8F2E4C32BC9FBC700A139A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8F2E4C72BC9FBC700A139A1 /* PBXTargetDependency */,
+			);
+			name = "Kammerer WeatherUITests";
+			productName = "Kammerer WeatherUITests";
+			productReference = E8F2E4C52BC9FBC700A139A1 /* Kammerer WeatherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8F2E4A32BC9FBC400A139A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					E8F2E4AA2BC9FBC400A139A1 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					E8F2E4BA2BC9FBC700A139A1 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = E8F2E4AA2BC9FBC400A139A1;
+					};
+					E8F2E4C42BC9FBC700A139A1 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = E8F2E4AA2BC9FBC400A139A1;
+					};
+				};
+			};
+			buildConfigurationList = E8F2E4A62BC9FBC400A139A1 /* Build configuration list for PBXProject "Kammerer Weather" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8F2E4A22BC9FBC400A139A1;
+			productRefGroup = E8F2E4AC2BC9FBC400A139A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8F2E4AA2BC9FBC400A139A1 /* Kammerer Weather */,
+				E8F2E4BA2BC9FBC700A139A1 /* Kammerer WeatherTests */,
+				E8F2E4C42BC9FBC700A139A1 /* Kammerer WeatherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8F2E4A92BC9FBC400A139A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8F2E4B62BC9FBC600A139A1 /* Preview Assets.xcassets in Resources */,
+				E8F2E4B32BC9FBC600A139A1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8F2E4B92BC9FBC700A139A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8F2E4C32BC9FBC700A139A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8F2E4A72BC9FBC400A139A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8F2E4B12BC9FBC400A139A1 /* ContentView.swift in Sources */,
+				E8F2E4AF2BC9FBC400A139A1 /* Kammerer_WeatherApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8F2E4B72BC9FBC700A139A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8F2E4C02BC9FBC700A139A1 /* Kammerer_WeatherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8F2E4C12BC9FBC700A139A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8F2E4CA2BC9FBC700A139A1 /* Kammerer_WeatherUITests.swift in Sources */,
+				E8F2E4CC2BC9FBC700A139A1 /* Kammerer_WeatherUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8F2E4BD2BC9FBC700A139A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8F2E4AA2BC9FBC400A139A1 /* Kammerer Weather */;
+			targetProxy = E8F2E4BC2BC9FBC700A139A1 /* PBXContainerItemProxy */;
+		};
+		E8F2E4C72BC9FBC700A139A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8F2E4AA2BC9FBC400A139A1 /* Kammerer Weather */;
+			targetProxy = E8F2E4C62BC9FBC700A139A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E8F2E4CD2BC9FBC700A139A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E8F2E4CE2BC9FBC700A139A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8F2E4D02BC9FBC700A139A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Kammerer Weather/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dapperapper..Kammerer-Weather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8F2E4D12BC9FBC700A139A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Kammerer Weather/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dapperapper..Kammerer-Weather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E8F2E4D32BC9FBC700A139A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dapperapper..Kammerer-WeatherTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kammerer Weather.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Kammerer Weather";
+			};
+			name = Debug;
+		};
+		E8F2E4D42BC9FBC700A139A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dapperapper..Kammerer-WeatherTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kammerer Weather.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Kammerer Weather";
+			};
+			name = Release;
+		};
+		E8F2E4D62BC9FBC700A139A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dapperapper..Kammerer-WeatherUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Kammerer Weather";
+			};
+			name = Debug;
+		};
+		E8F2E4D72BC9FBC700A139A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dapperapper..Kammerer-WeatherUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Kammerer Weather";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8F2E4A62BC9FBC400A139A1 /* Build configuration list for PBXProject "Kammerer Weather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8F2E4CD2BC9FBC700A139A1 /* Debug */,
+				E8F2E4CE2BC9FBC700A139A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8F2E4CF2BC9FBC700A139A1 /* Build configuration list for PBXNativeTarget "Kammerer Weather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8F2E4D02BC9FBC700A139A1 /* Debug */,
+				E8F2E4D12BC9FBC700A139A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8F2E4D22BC9FBC700A139A1 /* Build configuration list for PBXNativeTarget "Kammerer WeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8F2E4D32BC9FBC700A139A1 /* Debug */,
+				E8F2E4D42BC9FBC700A139A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8F2E4D52BC9FBC700A139A1 /* Build configuration list for PBXNativeTarget "Kammerer WeatherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8F2E4D62BC9FBC700A139A1 /* Debug */,
+				E8F2E4D72BC9FBC700A139A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8F2E4A32BC9FBC400A139A1 /* Project object */;
+}
