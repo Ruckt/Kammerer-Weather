@@ -14,6 +14,7 @@
 		E8F2E4C02BC9FBC700A139A1 /* Kammerer_WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4BF2BC9FBC700A139A1 /* Kammerer_WeatherTests.swift */; };
 		E8F2E4CA2BC9FBC700A139A1 /* Kammerer_WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4C92BC9FBC700A139A1 /* Kammerer_WeatherUITests.swift */; };
 		E8F2E4CC2BC9FBC700A139A1 /* Kammerer_WeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4CB2BC9FBC700A139A1 /* Kammerer_WeatherUITestsLaunchTests.swift */; };
+		E8F2E4DA2BCB906A00A139A1 /* PrettyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4D92BCB906A00A139A1 /* PrettyButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		E8F2E4C52BC9FBC700A139A1 /* Kammerer WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kammerer WeatherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F2E4C92BC9FBC700A139A1 /* Kammerer_WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kammerer_WeatherUITests.swift; sourceTree = "<group>"; };
 		E8F2E4CB2BC9FBC700A139A1 /* Kammerer_WeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kammerer_WeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E8F2E4D92BCB906A00A139A1 /* PrettyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrettyButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				E8F2E4AE2BC9FBC400A139A1 /* Kammerer_WeatherApp.swift */,
-				E8F2E4B02BC9FBC400A139A1 /* ContentView.swift */,
 				E8F2E4B22BC9FBC600A139A1 /* Assets.xcassets */,
+				E8F2E4D82BCB900A00A139A1 /* Views */,
 				E8F2E4B42BC9FBC600A139A1 /* Preview Content */,
 			);
 			path = "Kammerer Weather";
@@ -125,6 +127,15 @@
 				E8F2E4CB2BC9FBC700A139A1 /* Kammerer_WeatherUITestsLaunchTests.swift */,
 			);
 			path = "Kammerer WeatherUITests";
+			sourceTree = "<group>";
+		};
+		E8F2E4D82BCB900A00A139A1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E8F2E4B02BC9FBC400A139A1 /* ContentView.swift */,
+				E8F2E4D92BCB906A00A139A1 /* PrettyButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8F2E4B12BC9FBC400A139A1 /* ContentView.swift in Sources */,
+				E8F2E4DA2BCB906A00A139A1 /* PrettyButton.swift in Sources */,
 				E8F2E4AF2BC9FBC400A139A1 /* Kammerer_WeatherApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +434,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Kammerer Weather/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -450,6 +463,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Kammerer Weather/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
