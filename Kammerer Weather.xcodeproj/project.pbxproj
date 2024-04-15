@@ -15,6 +15,15 @@
 		E8F2E4CA2BC9FBC700A139A1 /* Kammerer_WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4C92BC9FBC700A139A1 /* Kammerer_WeatherUITests.swift */; };
 		E8F2E4CC2BC9FBC700A139A1 /* Kammerer_WeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4CB2BC9FBC700A139A1 /* Kammerer_WeatherUITestsLaunchTests.swift */; };
 		E8F2E4DA2BCB906A00A139A1 /* PrettyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4D92BCB906A00A139A1 /* PrettyButton.swift */; };
+		E8F2E4DE2BCB9C1200A139A1 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4DD2BCB9C1200A139A1 /* HTTPMethod.swift */; };
+		E8F2E4E02BCB9C3900A139A1 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4DF2BCB9C3900A139A1 /* HTTPClient.swift */; };
+		E8F2E4E22BCB9C4600A139A1 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4E12BCB9C4600A139A1 /* RequestError.swift */; };
+		E8F2E4E62BCB9CAB00A139A1 /* OpenWeatherEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4E42BCB9CAB00A139A1 /* OpenWeatherEndpoint.swift */; };
+		E8F2E4E72BCB9CAB00A139A1 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4E52BCB9CAB00A139A1 /* Endpoint.swift */; };
+		E8F2E4EA2BCC61B300A139A1 /* CityWeatherVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4E92BCC61B300A139A1 /* CityWeatherVM.swift */; };
+		E8F2E4ED2BCCA30600A139A1 /* OpenWeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4EC2BCCA30600A139A1 /* OpenWeatherResponse.swift */; };
+		E8F2E4F02BCCDC7300A139A1 /* OpenWeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4EF2BCCDC7300A139A1 /* OpenWeatherService.swift */; };
+		E8F2E4F22BCCEC7C00A139A1 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8F2E4F12BCCEC7C00A139A1 /* Secrets.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +55,15 @@
 		E8F2E4C92BC9FBC700A139A1 /* Kammerer_WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kammerer_WeatherUITests.swift; sourceTree = "<group>"; };
 		E8F2E4CB2BC9FBC700A139A1 /* Kammerer_WeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kammerer_WeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E8F2E4D92BCB906A00A139A1 /* PrettyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrettyButton.swift; sourceTree = "<group>"; };
+		E8F2E4DD2BCB9C1200A139A1 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		E8F2E4DF2BCB9C3900A139A1 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		E8F2E4E12BCB9C4600A139A1 /* RequestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		E8F2E4E42BCB9CAB00A139A1 /* OpenWeatherEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenWeatherEndpoint.swift; sourceTree = "<group>"; };
+		E8F2E4E52BCB9CAB00A139A1 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		E8F2E4E92BCC61B300A139A1 /* CityWeatherVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeatherVM.swift; sourceTree = "<group>"; };
+		E8F2E4EC2BCCA30600A139A1 /* OpenWeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherResponse.swift; sourceTree = "<group>"; };
+		E8F2E4EF2BCCDC7300A139A1 /* OpenWeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherService.swift; sourceTree = "<group>"; };
+		E8F2E4F12BCCEC7C00A139A1 /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +116,11 @@
 			children = (
 				E8F2E4AE2BC9FBC400A139A1 /* Kammerer_WeatherApp.swift */,
 				E8F2E4B22BC9FBC600A139A1 /* Assets.xcassets */,
+				E8F2E4F12BCCEC7C00A139A1 /* Secrets.plist */,
 				E8F2E4D82BCB900A00A139A1 /* Views */,
+				E8F2E4DB2BCB9BD400A139A1 /* Network */,
+				E8F2E4E82BCC60F300A139A1 /* ViewModels */,
+				E8F2E4EB2BCCA2B900A139A1 /* Model */,
 				E8F2E4B42BC9FBC600A139A1 /* Preview Content */,
 			);
 			path = "Kammerer Weather";
@@ -136,6 +158,59 @@
 				E8F2E4D92BCB906A00A139A1 /* PrettyButton.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E8F2E4DB2BCB9BD400A139A1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E8F2E4EE2BCCDC3900A139A1 /* Services */,
+				E8F2E4E32BCB9C9B00A139A1 /* Endpoints */,
+				E8F2E4DC2BCB9BF100A139A1 /* Base */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E8F2E4DC2BCB9BF100A139A1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E8F2E4DD2BCB9C1200A139A1 /* HTTPMethod.swift */,
+				E8F2E4DF2BCB9C3900A139A1 /* HTTPClient.swift */,
+				E8F2E4E12BCB9C4600A139A1 /* RequestError.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E8F2E4E32BCB9C9B00A139A1 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				E8F2E4E52BCB9CAB00A139A1 /* Endpoint.swift */,
+				E8F2E4E42BCB9CAB00A139A1 /* OpenWeatherEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		E8F2E4E82BCC60F300A139A1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E8F2E4E92BCC61B300A139A1 /* CityWeatherVM.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E8F2E4EB2BCCA2B900A139A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E8F2E4EC2BCCA30600A139A1 /* OpenWeatherResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E8F2E4EE2BCCDC3900A139A1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E8F2E4EF2BCCDC7300A139A1 /* OpenWeatherService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8F2E4B62BC9FBC600A139A1 /* Preview Assets.xcassets in Resources */,
+				E8F2E4F22BCCEC7C00A139A1 /* Secrets.plist in Resources */,
 				E8F2E4B32BC9FBC600A139A1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,9 +344,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8F2E4EA2BCC61B300A139A1 /* CityWeatherVM.swift in Sources */,
+				E8F2E4ED2BCCA30600A139A1 /* OpenWeatherResponse.swift in Sources */,
+				E8F2E4DE2BCB9C1200A139A1 /* HTTPMethod.swift in Sources */,
+				E8F2E4E02BCB9C3900A139A1 /* HTTPClient.swift in Sources */,
+				E8F2E4E72BCB9CAB00A139A1 /* Endpoint.swift in Sources */,
+				E8F2E4E22BCB9C4600A139A1 /* RequestError.swift in Sources */,
 				E8F2E4B12BC9FBC400A139A1 /* ContentView.swift in Sources */,
 				E8F2E4DA2BCB906A00A139A1 /* PrettyButton.swift in Sources */,
 				E8F2E4AF2BC9FBC400A139A1 /* Kammerer_WeatherApp.swift in Sources */,
+				E8F2E4E62BCB9CAB00A139A1 /* OpenWeatherEndpoint.swift in Sources */,
+				E8F2E4F02BCCDC7300A139A1 /* OpenWeatherService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,11 +521,14 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Kammere;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,11 +553,14 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Kammere;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

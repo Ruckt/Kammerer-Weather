@@ -19,6 +19,7 @@ struct ContentView: View {
 //    }
     
     @State private var cityName: String = ""
+    @StateObject var viewModel = CityWeatherVM()
 
     var body: some View {
         VStack {
