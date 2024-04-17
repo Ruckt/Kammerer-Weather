@@ -14,6 +14,7 @@ struct ContentView: View {
     @StateObject var viewModel = CityWeatherVM()
     @State var weatherData: OpenWeatherResponse?
     @State var shouldNavigate = false
+    @State var isFahrenheit = true
     
     var countries: [(name: String, code: String)] = []
 
@@ -46,6 +47,25 @@ struct ContentView: View {
                 .listRowSeparator(.hidden)
                 
                 HStack {
+                    Text("Celsius")
+                        .foregroundColor(isFahrenheit ? .gray : .blue)
+                    Spacer()
+                    Toggle("", isOn: $isFahrenheit)
+                        .labelsHidden()
+                        .toggleStyle(SwitchToggleStyle(tint: .blue))
+                    Spacer()
+                    Spacer()
+                    Text("Fahrenheit")
+                        .foregroundColor(isFahrenheit ? .blue : .gray)
+                }
+                .padding()
+                .frame(maxWidth: .infinity, minHeight: 50)
+                .background(Color(UIColor.systemBackground))
+                .clipped()
+                .padding(.vertical, 8)
+                .listRowSeparator(.hidden)
+                
+                HStack {
                     Spacer()
                     PrettyButton {
                         Task {
@@ -53,7 +73,7 @@ struct ContentView: View {
                             
                             print("Fetching weather for \(cityName), \(countryCode)")
                             
-                            let response = await viewModel.fetchWeatherFor(city: cityName, country: countryCode)
+                            let response = await viewModel.fetchWeatherFor(city: cityName, country: countryCode, isFarenheit: isFahrenheit)
                             weatherData = response
                             shouldNavigate = true // Trigger navigation
                         }

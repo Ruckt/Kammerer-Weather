@@ -11,7 +11,7 @@ class CityWeatherVM: ObservableObject {
 
     let service = OpenWeatherService()
 
-    func fetchWeatherFor(city: String, country: String) async ->  OpenWeatherResponse? {
+    func fetchWeatherFor(city: String, country: String, isFarenheit: Bool) async ->  OpenWeatherResponse? {
         
         guard let apikey = loadAPIKey()
         else {
@@ -19,7 +19,7 @@ class CityWeatherVM: ObservableObject {
             return nil
         }
         
-        let response = await service.getCityWeather(city: city, countryCode: country, apiKey: apikey)
+        let response = await service.getCityWeather(city: city, countryCode: country, isFarenheit: isFarenheit, apiKey: apikey)
 
         print(" ** Weather Data **")
         print(response)

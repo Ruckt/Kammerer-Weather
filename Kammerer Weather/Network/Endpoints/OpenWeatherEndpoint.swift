@@ -8,7 +8,7 @@
 import Foundation
 
 enum OpenWeatherEndpoint {
-    case city(_ city: String, country:String, key: String)
+    case city(_ city: String, country:String, isFarenheit: Bool, key: String)
 }
 
 extension OpenWeatherEndpoint: Endpoint {
@@ -36,9 +36,13 @@ extension OpenWeatherEndpoint: Endpoint {
     
     var queryItems: [URLQueryItem]? {
         switch self {
-        case let .city(city, country, key):
+        case let .city(city, country, isFarenheit, key):
+            
+            let units = isFarenheit ? "imperial" : "metric"
+            
             return [URLQueryItem(name: "q", value: "\(city),\(country)"),
-                    URLQueryItem(name: "APPID", value: "\(key)")]
+                    URLQueryItem(name: "APPID", value: key),
+                    URLQueryItem(name: "units", value: units)]
         }
     }
 

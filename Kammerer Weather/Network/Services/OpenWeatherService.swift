@@ -8,12 +8,12 @@
 import Foundation
 
 protocol OpenWeatherServiceable {
-    func getCityWeather(city: String, countryCode: String, apiKey: String) async -> (result: Result<OpenWeatherResponse, RequestError>, header: HeaderDictionary?)
+    func getCityWeather(city: String, countryCode: String, isFarenheit: Bool, apiKey: String) async -> (result: Result<OpenWeatherResponse, RequestError>, header: HeaderDictionary?)
 }
 
 struct OpenWeatherService: OpenWeatherServiceable, HTTPClient {
-    func getCityWeather(city: String, countryCode: String, apiKey: String) async -> (result: Result<OpenWeatherResponse, RequestError>, header: HeaderDictionary?) {
-        let endpoint = OpenWeatherEndpoint.city(city, country: countryCode, key: apiKey)
+    func getCityWeather(city: String, countryCode: String, isFarenheit: Bool, apiKey: String) async -> (result: Result<OpenWeatherResponse, RequestError>, header: HeaderDictionary?) {
+        let endpoint = OpenWeatherEndpoint.city(city, country: countryCode, isFarenheit: isFarenheit, key: apiKey)
         return await sendRequest(endpoint: endpoint, responseModel: OpenWeatherResponse.self)
     }
 }
