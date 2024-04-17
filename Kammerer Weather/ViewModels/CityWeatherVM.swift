@@ -11,18 +11,25 @@ class CityWeatherVM: ObservableObject {
 
     let service = OpenWeatherService()
 
-    func fetchWeatherFor(city: String, country: String) async {
+    func fetchWeatherFor(city: String, country: String) async ->  OpenWeatherResponse? {
         
         guard let apikey = loadAPIKey()
         else {
             print("Secret plist failed to load")
-            return
+            return nil
         }
         
-        let respone = await service.getCityWeather(city: city, countryCode: country, apiKey: apikey)
+        let response = await service.getCityWeather(city: city, countryCode: country, apiKey: apikey)
 
         print(" ** Weather Data **")
-        print(respone)
+        print(response)
+        
+        switch response.result {
+        case let .success(response):
+            return response
+        case let .failure(error):
+            return nil
+        }
     }
     
     // Secrets.plist is NOT pushed up to Github.

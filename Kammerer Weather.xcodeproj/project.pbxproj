@@ -26,6 +26,7 @@
 		E8F2E4F22BCCEC7C00A139A1 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8F2E4F12BCCEC7C00A139A1 /* Secrets.plist */; };
 		E8F2E4F42BCE104300A139A1 /* CountryCodes.csv in Resources */ = {isa = PBXBuildFile; fileRef = E8F2E4F32BCE104300A139A1 /* CountryCodes.csv */; };
 		E8F2E4F72BCE129D00A139A1 /* CodeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4F62BCE129D00A139A1 /* CodeLoader.swift */; };
+		E8F2E4F92BCE36D400A139A1 /* CityDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4F82BCE36D400A139A1 /* CityDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		E8F2E4F12BCCEC7C00A139A1 /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
 		E8F2E4F32BCE104300A139A1 /* CountryCodes.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CountryCodes.csv; sourceTree = "<group>"; };
 		E8F2E4F62BCE129D00A139A1 /* CodeLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeLoader.swift; sourceTree = "<group>"; };
+		E8F2E4F82BCE36D400A139A1 /* CityDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 			children = (
 				E8F2E4B02BC9FBC400A139A1 /* ContentView.swift */,
 				E8F2E4D92BCB906A00A139A1 /* PrettyButton.swift */,
+				E8F2E4F82BCE36D400A139A1 /* CityDetailsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8F2E4F92BCE36D400A139A1 /* CityDetailsView.swift in Sources */,
 				E8F2E4EA2BCC61B300A139A1 /* CityWeatherVM.swift in Sources */,
 				E8F2E4ED2BCCA30600A139A1 /* OpenWeatherResponse.swift in Sources */,
 				E8F2E4DE2BCB9C1200A139A1 /* HTTPMethod.swift in Sources */,
