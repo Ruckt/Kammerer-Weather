@@ -12,7 +12,8 @@ struct ContentView: View {
     @State var cityName: String = ""
     @State  var selectedCountryIndex = 0
     @StateObject var viewModel = CityWeatherVM()
-   // @State private var weatherData: WeatherData?
+    @State var weatherData: OpenWeatherResponse?
+    @State var shouldNavigate = false
     
     var countries: [(name: String, code: String)] = []
 
@@ -52,17 +53,21 @@ struct ContentView: View {
                             
                             print("Fetching weather for \(cityName), \(countryCode)")
                             
-                            await viewModel.fetchWeatherFor(city: cityName, country: countryCode)
+                            let response = await viewModel.fetchWeatherFor(city: cityName, country: countryCode)
+                            weatherData = response
+                            shouldNavigate = true // Trigger navigation
                         }
                     }
+                    NavigationLink(destination: CityDetailsView(weatherData: weatherData), isActive: $shouldNavigate) {
+                        EmptyView()
+                    }.hidden()
+                    
                     Spacer()
                 }
                 .padding()
                 .frame(maxWidth: .infinity, minHeight: 50)
                 .padding(.vertical, 8)
-                
             }
-           // .navigationBarTitle(Text("Kammerer Weather!"), displayMode: .inline)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {
@@ -73,14 +78,9 @@ struct ContentView: View {
                       }
                   }
               }
-//              .sheet(item: $weatherData) { data in
-//                  WeatherDetailsView(weatherData: data)
-//              }
             Spacer()
         }
-
     }
-    
 }
 
 #Preview {
