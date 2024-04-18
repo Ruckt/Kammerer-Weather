@@ -24,15 +24,7 @@ struct PrettyButton: View {
     }
 }
 
-//#Preview {
-//    PrettyButton(action: () -> Void)
-//}
-
-
-struct PrettyButton_Previews: PreviewProvider {
-    static var previews: some View {
-        PrettyButton {
-            print("Button pressed!")
-        }
-    }
+#Preview {
+    PrettyButton(action: {
+        print("Button pressed!")})
 }

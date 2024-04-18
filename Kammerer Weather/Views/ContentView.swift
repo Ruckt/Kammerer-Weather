@@ -71,16 +71,16 @@ struct ContentView: View {
                         Task {
                             let countryCode = countries[selectedCountryIndex].code
                             
-                            print("Fetching weather for \(cityName), \(countryCode)")
-                            
                             let response = await viewModel.fetchWeatherFor(city: cityName, country: countryCode, isFarenheit: isFahrenheit)
                             weatherData = response
                             shouldNavigate = true // Trigger navigation
                         }
                     }
-                    NavigationLink(destination: CityDetailsView(weatherData: weatherData), isActive: $shouldNavigate) {
-                        EmptyView()
-                    }.hidden()
+                    if let wd = weatherData {
+                        NavigationLink(destination: CityDetailsView(city: cityName, weatherData: wd), isActive: $shouldNavigate) {
+                            EmptyView()
+                        }.hidden()
+                    }
                     
                     Spacer()
                 }
