@@ -33,8 +33,14 @@ struct CityDetailsView: View {
                 Text("Feels Like: \(self.detail.weatherData.main.feelsLike)")
                     .font(.body)
                 Spacer()
+                Spacer()
+                Text(detail.errorMessage)
+                    .font(.caption)
+                    .foregroundStyle(.red)
+                Spacer()
                 Text("Pull to Refresh!")
                     .font(.footnote)
+                    .foregroundStyle(.blue)
             }
         }
         .frame(maxWidth: .infinity)

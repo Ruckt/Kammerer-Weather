@@ -16,6 +16,7 @@ struct ContentView: View {
     @State var weatherData: OpenWeatherResponse?
     @State var shouldNavigate = false
     @State var isFahrenheit = true
+    @State var errorMessage: String = ""
     
     var countries: [(name: String, code: String)] = []
 
@@ -70,11 +71,21 @@ struct ContentView: View {
                     Spacer()
                     PrettyButton {
                         Task {
+                            guard !cityName.isEmpty
+                            else {
+                                errorMessage = "Did you forget the city name?"
+                                return
+                            }
                             countryCode = countries[selectedCountryIndex].code
                             
-                            let response = await getService.fetchWeatherFor(city: cityName, country: countryCode, isFarenheit: isFahrenheit)
-                            weatherData = response
-                            shouldNavigate = true // Trigger navigation
+                            let package = await getService.fetchWeatherFor(city: cityName, country: countryCode, isFarenheit: isFahrenheit)
+                            if let wd = package.response {
+                                weatherData = wd
+                                errorMessage = ""
+                                shouldNavigate = true // Trigger navigation
+                            } else if let message = package.error {
+                                errorMessage = message
+                            }
                         }
                     }
                     if let wd = weatherData {
@@ -85,12 +96,18 @@ struct ContentView: View {
                             EmptyView()
                         }.hidden()
                     }
-                    
                     Spacer()
                 }
                 .padding()
                 .frame(maxWidth: .infinity, minHeight: 50)
                 .padding(.vertical, 8)
+
+                Text(errorMessage)
+                    .font(.subheadline)
+                    .frame(maxWidth: .infinity, minHeight: 50)
+                    .multilineTextAlignment(.center)
+                    .foregroundStyle(.red)
+                    .listRowSeparator(.hidden)
             }
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {

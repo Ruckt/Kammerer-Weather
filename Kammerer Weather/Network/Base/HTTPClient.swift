@@ -51,6 +51,8 @@ extension HTTPClient {
                 return (.success(decodedResponse), response.allHeaderFields)
             case 401:
                 return (.failure(.unauthorized), nil)
+            case 404:
+                return (.failure(.cityNotFound), nil)
             default:
                 return (.failure(.unexpectedStatusCode), nil)
             }
