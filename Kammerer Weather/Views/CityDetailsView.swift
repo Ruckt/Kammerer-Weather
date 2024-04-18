@@ -26,12 +26,15 @@ struct CityDetailsView: View {
                         .frame(maxHeight: 250)
                 }
                 Text("Description:  \(self.detail.description)")
-                    .font(.body)
+                    .font(.largeTitle)
                     .padding()
                 Text("Current Temperature: \(self.detail.weatherData.main.temp)")
-                    .font(.subheadline)
+                    .font(.body)
                 Text("Feels Like: \(self.detail.weatherData.main.feelsLike)")
-                    .font(.subheadline)
+                    .font(.body)
+                Spacer()
+                Text("Pull to Refresh!")
+                    .font(.footnote)
             }
         }
         .frame(maxWidth: .infinity)

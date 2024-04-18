@@ -21,7 +21,7 @@ class GetWeatherService: ObservableObject {
         
         guard !key.isEmpty
         else {
-            print("Secret plist failed to load")
+            print("The secret plist has failed to load")
             return nil
         }
         
@@ -31,6 +31,7 @@ class GetWeatherService: ObservableObject {
         case let .success(response):
             return response
         case let .failure(error):
+            print("Error: ", error)
             return nil
         }
     }
