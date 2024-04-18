@@ -8,46 +8,41 @@
 import SwiftUI
 
 struct CityDetailsView: View {
-    var weatherData: OpenWeatherResponse
+    var detail: CityDetailVM
     
-    let city: String
-    var iconUrl: URL?
-    
-    let mainDescription: String
-    let description: String
-    let iconId: String
-    
-    init(city: String,
-         weatherData: OpenWeatherResponse) {
-
-        self.city = city
-        self.weatherData = weatherData
-        
-        let details = weatherData.weather[0]
-        mainDescription = details.main
-        description = details.description
-        iconId = details.icon
-        
-        iconUrl = URL(string: "https://openweathermap.org/img/wn/\(iconId)@2x.png")
+    init(detail: CityDetailVM) {
+        self.detail = detail
     }
     
     var body: some View {
-        VStack {
-            Text("\(self.city) is \(self.mainDescription)")
-                .font(.headline)
-            
-            if let url = iconUrl {
-                AsyncImageView(url: url)
+        ScrollView {
+            VStack {
+                Text("\(self.detail.name) is \(self.detail.mainDescription)")
+                    .font(.headline)
+                
+                if let url = self.detail.iconUrl {
+                    AsyncImageView(url: url)
                         .aspectRatio(contentMode: .fit)
                         .frame(maxHeight: 250)
+                }
+                Text("Description:  \(self.detail.description)")
+                    .font(.body)
+                    .padding()
+                Text("Current Temperature: \(self.detail.weatherData.main.temp)")
+                    .font(.subheadline)
+                Text("Feels Like: \(self.detail.weatherData.main.feelsLike)")
+                    .font(.subheadline)
             }
-            Text("Description:  \(self.description)")
-                .font(.body)
-                .padding()
-            Text("Current Temperature: \(weatherData.main.temp)")
-                .font(.subheadline)
-            Text("Feels Like: \(weatherData.main.feelsLike)")
-                .font(.subheadline)
         }
+        .frame(maxWidth: .infinity)
+        .refreshable {
+            await loadData()
+        }
+    }
+    
+    func loadData() async {
+            // Simulate network request with delay
+            try? await Task.sleep(nanoseconds: 2_000_000_000)  // 2 seconds delay
+            print(" Refreshing")
     }
 }

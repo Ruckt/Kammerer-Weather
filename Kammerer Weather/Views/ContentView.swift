@@ -10,8 +10,9 @@ import SwiftUI
 struct ContentView: View {
     
     @State var cityName: String = ""
+    @State var countryCode: String = ""
     @State  var selectedCountryIndex = 0
-    @StateObject var viewModel = CityWeatherVM()
+    @StateObject var viewModel = FindWeatherVM()
     @State var weatherData: OpenWeatherResponse?
     @State var shouldNavigate = false
     @State var isFahrenheit = true
@@ -69,7 +70,7 @@ struct ContentView: View {
                     Spacer()
                     PrettyButton {
                         Task {
-                            let countryCode = countries[selectedCountryIndex].code
+                            countryCode = countries[selectedCountryIndex].code
                             
                             let response = await viewModel.fetchWeatherFor(city: cityName, country: countryCode, isFarenheit: isFahrenheit)
                             weatherData = response
@@ -77,7 +78,9 @@ struct ContentView: View {
                         }
                     }
                     if let wd = weatherData {
-                        NavigationLink(destination: CityDetailsView(city: cityName, weatherData: wd), isActive: $shouldNavigate) {
+                        let detail = CityDetailVM(name: cityName, country: countryCode, isFarenheit: isFahrenheit, weatherData: wd)
+                        
+                        NavigationLink(destination: CityDetailsView(detail: detail), isActive: $shouldNavigate) {
                             EmptyView()
                         }.hidden()
                     }

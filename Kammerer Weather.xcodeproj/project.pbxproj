@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E82ADBEE2BD0BAF800A011FA /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82ADBED2BD0BAF800A011FA /* AsyncImageView.swift */; };
 		E82ADBF12BD0C11500A011FA /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82ADBF02BD0C11500A011FA /* ImageLoader.swift */; };
+		E82ADBF32BD0CF7300A011FA /* CityDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82ADBF22BD0CF7300A011FA /* CityDetailVM.swift */; };
 		E8F2E4AF2BC9FBC400A139A1 /* Kammerer_WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4AE2BC9FBC400A139A1 /* Kammerer_WeatherApp.swift */; };
 		E8F2E4B12BC9FBC400A139A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4B02BC9FBC400A139A1 /* ContentView.swift */; };
 		E8F2E4B32BC9FBC600A139A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8F2E4B22BC9FBC600A139A1 /* Assets.xcassets */; };
@@ -22,7 +23,7 @@
 		E8F2E4E22BCB9C4600A139A1 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4E12BCB9C4600A139A1 /* RequestError.swift */; };
 		E8F2E4E62BCB9CAB00A139A1 /* OpenWeatherEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4E42BCB9CAB00A139A1 /* OpenWeatherEndpoint.swift */; };
 		E8F2E4E72BCB9CAB00A139A1 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4E52BCB9CAB00A139A1 /* Endpoint.swift */; };
-		E8F2E4EA2BCC61B300A139A1 /* CityWeatherVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4E92BCC61B300A139A1 /* CityWeatherVM.swift */; };
+		E8F2E4EA2BCC61B300A139A1 /* FindWeatherVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4E92BCC61B300A139A1 /* FindWeatherVM.swift */; };
 		E8F2E4ED2BCCA30600A139A1 /* OpenWeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4EC2BCCA30600A139A1 /* OpenWeatherResponse.swift */; };
 		E8F2E4F02BCCDC7300A139A1 /* OpenWeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4EF2BCCDC7300A139A1 /* OpenWeatherService.swift */; };
 		E8F2E4F22BCCEC7C00A139A1 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8F2E4F12BCCEC7C00A139A1 /* Secrets.plist */; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		E82ADBED2BD0BAF800A011FA /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		E82ADBF02BD0C11500A011FA /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		E82ADBF22BD0CF7300A011FA /* CityDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailVM.swift; sourceTree = "<group>"; };
 		E8F2E4AB2BC9FBC400A139A1 /* Kammerer Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kammerer Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F2E4AE2BC9FBC400A139A1 /* Kammerer_WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kammerer_WeatherApp.swift; sourceTree = "<group>"; };
 		E8F2E4B02BC9FBC400A139A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,7 +69,7 @@
 		E8F2E4E12BCB9C4600A139A1 /* RequestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
 		E8F2E4E42BCB9CAB00A139A1 /* OpenWeatherEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenWeatherEndpoint.swift; sourceTree = "<group>"; };
 		E8F2E4E52BCB9CAB00A139A1 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
-		E8F2E4E92BCC61B300A139A1 /* CityWeatherVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeatherVM.swift; sourceTree = "<group>"; };
+		E8F2E4E92BCC61B300A139A1 /* FindWeatherVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindWeatherVM.swift; sourceTree = "<group>"; };
 		E8F2E4EC2BCCA30600A139A1 /* OpenWeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherResponse.swift; sourceTree = "<group>"; };
 		E8F2E4EF2BCCDC7300A139A1 /* OpenWeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherService.swift; sourceTree = "<group>"; };
 		E8F2E4F12BCCEC7C00A139A1 /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
@@ -214,7 +216,8 @@
 		E8F2E4E82BCC60F300A139A1 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				E8F2E4E92BCC61B300A139A1 /* CityWeatherVM.swift */,
+				E8F2E4E92BCC61B300A139A1 /* FindWeatherVM.swift */,
+				E82ADBF22BD0CF7300A011FA /* CityDetailVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -377,7 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8F2E4F92BCE36D400A139A1 /* CityDetailsView.swift in Sources */,
-				E8F2E4EA2BCC61B300A139A1 /* CityWeatherVM.swift in Sources */,
+				E8F2E4EA2BCC61B300A139A1 /* FindWeatherVM.swift in Sources */,
 				E82ADBF12BD0C11500A011FA /* ImageLoader.swift in Sources */,
 				E8F2E4ED2BCCA30600A139A1 /* OpenWeatherResponse.swift in Sources */,
 				E8F2E4DE2BCB9C1200A139A1 /* HTTPMethod.swift in Sources */,
@@ -388,6 +391,7 @@
 				E8F2E4B12BC9FBC400A139A1 /* ContentView.swift in Sources */,
 				E8F2E4DA2BCB906A00A139A1 /* PrettyButton.swift in Sources */,
 				E8F2E4AF2BC9FBC400A139A1 /* Kammerer_WeatherApp.swift in Sources */,
+				E82ADBF32BD0CF7300A011FA /* CityDetailVM.swift in Sources */,
 				E8F2E4E62BCB9CAB00A139A1 /* OpenWeatherEndpoint.swift in Sources */,
 				E8F2E4F02BCCDC7300A139A1 /* OpenWeatherService.swift in Sources */,
 				E82ADBEE2BD0BAF800A011FA /* AsyncImageView.swift in Sources */,

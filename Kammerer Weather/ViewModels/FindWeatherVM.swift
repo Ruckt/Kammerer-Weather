@@ -7,7 +7,7 @@
 
 import Foundation
 
-class CityWeatherVM: ObservableObject {
+class FindWeatherVM: ObservableObject {
 
     let service = OpenWeatherService()
 
@@ -20,9 +20,6 @@ class CityWeatherVM: ObservableObject {
         }
         
         let response = await service.getCityWeather(city: city, countryCode: country, isFarenheit: isFarenheit, apiKey: apikey)
-
-        print(" ** Weather Data **")
-        print(response)
         
         switch response.result {
         case let .success(response):
