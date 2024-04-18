@@ -11,6 +11,7 @@ struct CityDetailsView: View {
     var weatherData: OpenWeatherResponse
     
     let city: String
+    var iconUrl: URL?
     
     let mainDescription: String
     let description: String
@@ -27,18 +28,26 @@ struct CityDetailsView: View {
         description = details.description
         iconId = details.icon
         
-        print(" *** ")
-        print(weatherData)
+        iconUrl = URL(string: "https://openweathermap.org/img/wn/\(iconId)@2x.png")
     }
     
     var body: some View {
         VStack {
-            Text("Temperature: \(weatherData.main.temp)")
-            Text("Feels Like: \(weatherData.main.feelsLike)")
+            Text("\(self.city) is \(self.mainDescription)")
+                .font(.headline)
+            
+            if let url = iconUrl {
+                AsyncImageView(url: url)
+                        .aspectRatio(contentMode: .fit)
+                        .frame(maxHeight: 250)
+            }
             Text("Description:  \(self.description)")
-            Text("Icon:  \(self.iconId)")
+                .font(.body)
+                .padding()
+            Text("Current Temperature: \(weatherData.main.temp)")
+                .font(.subheadline)
+            Text("Feels Like: \(weatherData.main.feelsLike)")
+                .font(.subheadline)
         }
-        .navigationTitle("\(self.city) is \(self.mainDescription)")
-        .navigationBarTitleDisplayMode(.inline)
     }
 }
