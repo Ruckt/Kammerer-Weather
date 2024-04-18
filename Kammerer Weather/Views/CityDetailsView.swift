@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CityDetailsView: View {
-    var detail: CityDetailVM
+    @ObservedObject var detail: CityDetailVM
     
     init(detail: CityDetailVM) {
         self.detail = detail
@@ -36,13 +36,7 @@ struct CityDetailsView: View {
         }
         .frame(maxWidth: .infinity)
         .refreshable {
-            await loadData()
+            await detail.refreshWeather()
         }
-    }
-    
-    func loadData() async {
-            // Simulate network request with delay
-            try? await Task.sleep(nanoseconds: 2_000_000_000)  // 2 seconds delay
-            print(" Refreshing")
     }
 }

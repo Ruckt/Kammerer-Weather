@@ -12,7 +12,7 @@ struct ContentView: View {
     @State var cityName: String = ""
     @State var countryCode: String = ""
     @State  var selectedCountryIndex = 0
-    @StateObject var viewModel = FindWeatherVM()
+    @StateObject var getService = GetWeatherService()
     @State var weatherData: OpenWeatherResponse?
     @State var shouldNavigate = false
     @State var isFahrenheit = true
@@ -72,13 +72,14 @@ struct ContentView: View {
                         Task {
                             countryCode = countries[selectedCountryIndex].code
                             
-                            let response = await viewModel.fetchWeatherFor(city: cityName, country: countryCode, isFarenheit: isFahrenheit)
+                            let response = await getService.fetchWeatherFor(city: cityName, country: countryCode, isFarenheit: isFahrenheit)
                             weatherData = response
                             shouldNavigate = true // Trigger navigation
                         }
                     }
                     if let wd = weatherData {
-                        let detail = CityDetailVM(name: cityName, country: countryCode, isFarenheit: isFahrenheit, weatherData: wd)
+                        let detail = CityDetailVM(name: cityName,
+                                                  country: countryCode, isFarenheit: isFahrenheit, weatherData: wd, getService: getService)
                         
                         NavigationLink(destination: CityDetailsView(detail: detail), isActive: $shouldNavigate) {
                             EmptyView()

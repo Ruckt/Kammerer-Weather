@@ -7,23 +7,25 @@
 
 import Foundation
 
-class CityDetailVM {
+class CityDetailVM: ObservableObject{
   
     let name: String
     let country: String
     let isFarenheit: Bool
+    let getService: GetWeatherService
     
-    var weatherData: OpenWeatherResponse
-    var mainDescription: String = ""
-    var description: String = ""
-    var iconUrl: URL?
+    @Published var weatherData: OpenWeatherResponse
+    @Published var mainDescription: String = ""
+    @Published var description: String = ""
+    @Published var iconUrl: URL?
     
     
-    init(name: String, country: String, isFarenheit: Bool, weatherData: OpenWeatherResponse) {
+    init(name: String, country: String, isFarenheit: Bool, weatherData: OpenWeatherResponse, getService: GetWeatherService) {
         self.name = name
         self.country = country
         self.isFarenheit = isFarenheit
         self.weatherData = weatherData
+        self.getService = getService
     
         self.addDetails(weatherData: weatherData)
     }
@@ -37,4 +39,12 @@ class CityDetailVM {
         self.iconUrl = URL(string: "https://openweathermap.org/img/wn/\(iconId)@2x.png")
     }
     
+    @MainActor
+    func refreshWeather() async {
+        if let response = await getService.fetchWeatherFor(city: name, country: country, isFarenheit: isFarenheit) {
+            weatherData = response
+            addDetails(weatherData: weatherData)
+            print(response)
+        }
+    }
 }

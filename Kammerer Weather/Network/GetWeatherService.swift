@@ -7,19 +7,25 @@
 
 import Foundation
 
-class FindWeatherVM: ObservableObject {
+class GetWeatherService: ObservableObject {
 
     let service = OpenWeatherService()
+    
+    var key = ""
 
     func fetchWeatherFor(city: String, country: String, isFarenheit: Bool) async ->  OpenWeatherResponse? {
         
-        guard let apikey = loadAPIKey()
+        if key.isEmpty {
+            key = loadAPIKey() ?? ""
+        }
+        
+        guard !key.isEmpty
         else {
             print("Secret plist failed to load")
             return nil
         }
         
-        let response = await service.getCityWeather(city: city, countryCode: country, isFarenheit: isFarenheit, apiKey: apikey)
+        let response = await service.getCityWeather(city: city, countryCode: country, isFarenheit: isFarenheit, apiKey: key)
         
         switch response.result {
         case let .success(response):
