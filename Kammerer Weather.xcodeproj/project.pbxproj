@@ -10,13 +10,14 @@
 		E82ADBEE2BD0BAF800A011FA /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82ADBED2BD0BAF800A011FA /* AsyncImageView.swift */; };
 		E82ADBF12BD0C11500A011FA /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82ADBF02BD0C11500A011FA /* ImageLoader.swift */; };
 		E82ADBF32BD0CF7300A011FA /* CityDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82ADBF22BD0CF7300A011FA /* CityDetailVM.swift */; };
+		E82ADC2D2BD9FDD700A011FA /* OpenWeatherServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82ADC2C2BD9FDD700A011FA /* OpenWeatherServiceMock.swift */; };
+		E82ADC2F2BDA03BB00A011FA /* PhiladelphiaMock.json in Resources */ = {isa = PBXBuildFile; fileRef = E82ADC2E2BDA03BB00A011FA /* PhiladelphiaMock.json */; };
+		E82ADC322BDA136B00A011FA /* PhiladelphiaMock.json in Resources */ = {isa = PBXBuildFile; fileRef = E82ADC2E2BDA03BB00A011FA /* PhiladelphiaMock.json */; };
 		E8F2E4AF2BC9FBC400A139A1 /* Kammerer_WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4AE2BC9FBC400A139A1 /* Kammerer_WeatherApp.swift */; };
 		E8F2E4B12BC9FBC400A139A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4B02BC9FBC400A139A1 /* ContentView.swift */; };
 		E8F2E4B32BC9FBC600A139A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8F2E4B22BC9FBC600A139A1 /* Assets.xcassets */; };
 		E8F2E4B62BC9FBC600A139A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8F2E4B52BC9FBC600A139A1 /* Preview Assets.xcassets */; };
 		E8F2E4C02BC9FBC700A139A1 /* Kammerer_WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4BF2BC9FBC700A139A1 /* Kammerer_WeatherTests.swift */; };
-		E8F2E4CA2BC9FBC700A139A1 /* Kammerer_WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4C92BC9FBC700A139A1 /* Kammerer_WeatherUITests.swift */; };
-		E8F2E4CC2BC9FBC700A139A1 /* Kammerer_WeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4CB2BC9FBC700A139A1 /* Kammerer_WeatherUITestsLaunchTests.swift */; };
 		E8F2E4DA2BCB906A00A139A1 /* PrettyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4D92BCB906A00A139A1 /* PrettyButton.swift */; };
 		E8F2E4DE2BCB9C1200A139A1 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4DD2BCB9C1200A139A1 /* HTTPMethod.swift */; };
 		E8F2E4E02BCB9C3900A139A1 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4DF2BCB9C3900A139A1 /* HTTPClient.swift */; };
@@ -40,19 +41,14 @@
 			remoteGlobalIDString = E8F2E4AA2BC9FBC400A139A1;
 			remoteInfo = "Kammerer Weather";
 		};
-		E8F2E4C62BC9FBC700A139A1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E8F2E4A32BC9FBC400A139A1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E8F2E4AA2BC9FBC400A139A1;
-			remoteInfo = "Kammerer Weather";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E82ADBED2BD0BAF800A011FA /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		E82ADBF02BD0C11500A011FA /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		E82ADBF22BD0CF7300A011FA /* CityDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailVM.swift; sourceTree = "<group>"; };
+		E82ADC2C2BD9FDD700A011FA /* OpenWeatherServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OpenWeatherServiceMock.swift; path = "Kammerer WeatherTests/OpenWeatherServiceMock.swift"; sourceTree = SOURCE_ROOT; };
+		E82ADC2E2BDA03BB00A011FA /* PhiladelphiaMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = PhiladelphiaMock.json; path = "Kammerer WeatherTests/PhiladelphiaMock.json"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.json; };
 		E8F2E4AB2BC9FBC400A139A1 /* Kammerer Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kammerer Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F2E4AE2BC9FBC400A139A1 /* Kammerer_WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kammerer_WeatherApp.swift; sourceTree = "<group>"; };
 		E8F2E4B02BC9FBC400A139A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,9 +56,6 @@
 		E8F2E4B52BC9FBC600A139A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E8F2E4BB2BC9FBC700A139A1 /* Kammerer WeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kammerer WeatherTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F2E4BF2BC9FBC700A139A1 /* Kammerer_WeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kammerer_WeatherTests.swift; sourceTree = "<group>"; };
-		E8F2E4C52BC9FBC700A139A1 /* Kammerer WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kammerer WeatherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8F2E4C92BC9FBC700A139A1 /* Kammerer_WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kammerer_WeatherUITests.swift; sourceTree = "<group>"; };
-		E8F2E4CB2BC9FBC700A139A1 /* Kammerer_WeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kammerer_WeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E8F2E4D92BCB906A00A139A1 /* PrettyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrettyButton.swift; sourceTree = "<group>"; };
 		E8F2E4DD2BCB9C1200A139A1 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		E8F2E4DF2BCB9C3900A139A1 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
@@ -93,13 +86,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E8F2E4C22BC9FBC700A139A1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -117,7 +103,6 @@
 			children = (
 				E8F2E4AD2BC9FBC400A139A1 /* Kammerer Weather */,
 				E8F2E4BE2BC9FBC700A139A1 /* Kammerer WeatherTests */,
-				E8F2E4C82BC9FBC700A139A1 /* Kammerer WeatherUITests */,
 				E8F2E4AC2BC9FBC400A139A1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -127,7 +112,6 @@
 			children = (
 				E8F2E4AB2BC9FBC400A139A1 /* Kammerer Weather.app */,
 				E8F2E4BB2BC9FBC700A139A1 /* Kammerer WeatherTests.xctest */,
-				E8F2E4C52BC9FBC700A139A1 /* Kammerer WeatherUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,18 +144,11 @@
 		E8F2E4BE2BC9FBC700A139A1 /* Kammerer WeatherTests */ = {
 			isa = PBXGroup;
 			children = (
+				E82ADC2E2BDA03BB00A011FA /* PhiladelphiaMock.json */,
 				E8F2E4BF2BC9FBC700A139A1 /* Kammerer_WeatherTests.swift */,
+				E82ADC2C2BD9FDD700A011FA /* OpenWeatherServiceMock.swift */,
 			);
 			path = "Kammerer WeatherTests";
-			sourceTree = "<group>";
-		};
-		E8F2E4C82BC9FBC700A139A1 /* Kammerer WeatherUITests */ = {
-			isa = PBXGroup;
-			children = (
-				E8F2E4C92BC9FBC700A139A1 /* Kammerer_WeatherUITests.swift */,
-				E8F2E4CB2BC9FBC700A139A1 /* Kammerer_WeatherUITestsLaunchTests.swift */,
-			);
-			path = "Kammerer WeatherUITests";
 			sourceTree = "<group>";
 		};
 		E8F2E4D82BCB900A00A139A1 /* Views */ = {
@@ -285,24 +262,6 @@
 			productReference = E8F2E4BB2BC9FBC700A139A1 /* Kammerer WeatherTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E8F2E4C42BC9FBC700A139A1 /* Kammerer WeatherUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E8F2E4D52BC9FBC700A139A1 /* Build configuration list for PBXNativeTarget "Kammerer WeatherUITests" */;
-			buildPhases = (
-				E8F2E4C12BC9FBC700A139A1 /* Sources */,
-				E8F2E4C22BC9FBC700A139A1 /* Frameworks */,
-				E8F2E4C32BC9FBC700A139A1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E8F2E4C72BC9FBC700A139A1 /* PBXTargetDependency */,
-			);
-			name = "Kammerer WeatherUITests";
-			productName = "Kammerer WeatherUITests";
-			productReference = E8F2E4C52BC9FBC700A139A1 /* Kammerer WeatherUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -317,10 +276,6 @@
 						CreatedOnToolsVersion = 15.3;
 					};
 					E8F2E4BA2BC9FBC700A139A1 = {
-						CreatedOnToolsVersion = 15.3;
-						TestTargetID = E8F2E4AA2BC9FBC400A139A1;
-					};
-					E8F2E4C42BC9FBC700A139A1 = {
 						CreatedOnToolsVersion = 15.3;
 						TestTargetID = E8F2E4AA2BC9FBC400A139A1;
 					};
@@ -341,7 +296,6 @@
 			targets = (
 				E8F2E4AA2BC9FBC400A139A1 /* Kammerer Weather */,
 				E8F2E4BA2BC9FBC700A139A1 /* Kammerer WeatherTests */,
-				E8F2E4C42BC9FBC700A139A1 /* Kammerer WeatherUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -355,6 +309,7 @@
 				E8F2E4B62BC9FBC600A139A1 /* Preview Assets.xcassets in Resources */,
 				E8F2E4F22BCCEC7C00A139A1 /* Secrets.plist in Resources */,
 				E8F2E4B32BC9FBC600A139A1 /* Assets.xcassets in Resources */,
+				E82ADC322BDA136B00A011FA /* PhiladelphiaMock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,13 +317,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E8F2E4C32BC9FBC700A139A1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				E82ADC2F2BDA03BB00A011FA /* PhiladelphiaMock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,15 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8F2E4C02BC9FBC700A139A1 /* Kammerer_WeatherTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E8F2E4C12BC9FBC700A139A1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E8F2E4CA2BC9FBC700A139A1 /* Kammerer_WeatherUITests.swift in Sources */,
-				E8F2E4CC2BC9FBC700A139A1 /* Kammerer_WeatherUITestsLaunchTests.swift in Sources */,
+				E82ADC2D2BD9FDD700A011FA /* OpenWeatherServiceMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,11 +363,6 @@
 			isa = PBXTargetDependency;
 			target = E8F2E4AA2BC9FBC400A139A1 /* Kammerer Weather */;
 			targetProxy = E8F2E4BC2BC9FBC700A139A1 /* PBXContainerItemProxy */;
-		};
-		E8F2E4C72BC9FBC700A139A1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E8F2E4AA2BC9FBC400A139A1 /* Kammerer Weather */;
-			targetProxy = E8F2E4C62BC9FBC700A139A1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -652,40 +588,6 @@
 			};
 			name = Release;
 		};
-		E8F2E4D62BC9FBC700A139A1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dapperapper..Kammerer-WeatherUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Kammerer Weather";
-			};
-			name = Debug;
-		};
-		E8F2E4D72BC9FBC700A139A1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dapperapper..Kammerer-WeatherUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Kammerer Weather";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -712,15 +614,6 @@
 			buildConfigurations = (
 				E8F2E4D32BC9FBC700A139A1 /* Debug */,
 				E8F2E4D42BC9FBC700A139A1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E8F2E4D52BC9FBC700A139A1 /* Build configuration list for PBXNativeTarget "Kammerer WeatherUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E8F2E4D62BC9FBC700A139A1 /* Debug */,
-				E8F2E4D72BC9FBC700A139A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

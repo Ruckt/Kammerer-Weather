@@ -10,27 +10,31 @@ import XCTest
 
 final class Kammerer_WeatherTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+    let service = OpenWeatherServiceMock()
+    
+    // This test is primarily that the OpenWeatherResponse model has not been changed.
+    func testGetCityWeather() async {
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+        let response = await service.getCityWeather(city: "Philadelphia", countryCode: "PA", isFarenheit: true, apiKey: "1234")
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+        guard case let .success(weatherData) = response.result
+        else {
+            XCTFail()
+            return
         }
+
+        let details = weatherData.weather[0]
+        let mainDescription = details.main
+        let description = details.description
+        let iconId = details.icon
+        let temp = weatherData.main.temp
+        let feelsLike = weatherData.main.feelsLike
+        
+        XCTAssert(mainDescription == "Clouds")
+        XCTAssert(description == "broken clouds")
+        XCTAssert(iconId == "04n")
+        XCTAssert(temp == 287.95)
+        XCTAssert(feelsLike == 286.74)
     }
 
 }
