@@ -15,7 +15,7 @@ final class Kammerer_WeatherTests: XCTestCase {
     // This test is primarily that the OpenWeatherResponse model has not been changed.
     func testGetCityWeather() async {
 
-        let response = await service.getCityWeather(city: "Philadelphia", countryCode: "PA", isFahrenheit: true, apiKey: "1234")
+        let response = await service.getCityWeather(name: "Philadelphia", "PA", "US", true, apiKey: "1234")
 
         guard case let .success(weatherData) = response.result
         else {
