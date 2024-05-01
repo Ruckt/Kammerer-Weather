@@ -11,6 +11,7 @@ class CityDetailVM: ObservableObject{
   
     let name: String
     let country: String
+    let stateCode: String?
     let isFarenheit: Bool
     let getService: GetWeatherService
     
@@ -21,12 +22,13 @@ class CityDetailVM: ObservableObject{
     @Published var errorMessage: String = ""
     
     
-    init(name: String, country: String, isFarenheit: Bool, weatherData: OpenWeatherResponse, getService: GetWeatherService) {
+    init(name: String, stateCode: String?, country: String, isFarenheit: Bool, weatherData: OpenWeatherResponse, weatherService: GetWeatherService) {
         self.name = name
+        self.stateCode = stateCode
         self.country = country
         self.isFarenheit = isFarenheit
         self.weatherData = weatherData
-        self.getService = getService
+        self.getService = weatherService
     
         self.addDetails(weatherData: weatherData)
     }
@@ -42,7 +44,7 @@ class CityDetailVM: ObservableObject{
     
     @MainActor
     func refreshWeather() async {
-        let package = await getService.fetchWeatherFor(city: name, country: country, isFarenheit: isFarenheit)
+        let package = await getService.fetchWeatherFor(name, stateCode, country, isFarenheit)
         
         if let response = package.response {
             weatherData = response

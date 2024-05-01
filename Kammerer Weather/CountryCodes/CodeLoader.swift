@@ -9,8 +9,8 @@ import Foundation
 
 struct CodeLoader {
     
-    func getCodes() -> [(String, String)] {
-        if let path = Bundle.main.path(forResource: "CountryCodes", ofType: "csv") {
+    func getCodes(fileName:String) -> [(String, String)] {
+        if let path = Bundle.main.path(forResource: fileName, ofType: "csv") {
             let codes = loadCSV(from: path)
             return codes
         } else {
@@ -27,7 +27,9 @@ struct CodeLoader {
             for row in rows {
                 let columns = row.components(separatedBy: ",")
                 if columns.count == 2 {
-                    results.append((columns[0], columns[1]))
+                    // CSV file may inclue carriage return of \r in each line
+                    let code = columns[1].replacingOccurrences(of: "\r", with: "")
+                    results.append((columns[0], code))
                 }
             }
         } catch {

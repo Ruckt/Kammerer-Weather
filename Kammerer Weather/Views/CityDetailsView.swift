@@ -10,14 +10,23 @@ import SwiftUI
 struct CityDetailsView: View {
     @ObservedObject var detail: CityDetailVM
     
+    let locationName: String
+    
     init(detail: CityDetailVM) {
         self.detail = detail
+        let city = detail.name
+        
+        if let state = detail.stateCode {
+            locationName = city + ", " + state + ", " + detail.country
+        } else {
+            locationName = city + ", " + detail.country
+        }
     }
     
     var body: some View {
         ScrollView {
             VStack {
-                Text("\(self.detail.name) is \(self.detail.mainDescription)")
+                Text("\(locationName) is \(self.detail.mainDescription)")
                     .font(.headline)
                 
                 if let url = self.detail.iconUrl {

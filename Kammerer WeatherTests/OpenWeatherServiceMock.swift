@@ -10,7 +10,7 @@
 import Foundation
 
 struct OpenWeatherServiceMock: OpenWeatherServiceable {
-    func getCityWeather(city: String, countryCode: String, isFarenheit: Bool, apiKey: String) async -> (result: Result<Kammerer_Weather.OpenWeatherResponse, Kammerer_Weather.RequestError>, header: Kammerer_Weather.HeaderDictionary?) {
+    func getCityWeather(city: String, countryCode: String, isFahrenheit: Bool, apiKey: String) async -> (result: Result<Kammerer_Weather.OpenWeatherResponse, Kammerer_Weather.RequestError>, header: Kammerer_Weather.HeaderDictionary?) {
 
         let fileName = city + "Mock"
         guard let path = Bundle.main.path(forResource: fileName, ofType: "json")

@@ -13,7 +13,7 @@ class GetWeatherService: ObservableObject {
     
     var key = ""
 
-    func fetchWeatherFor(city: String, country: String, isFarenheit: Bool) async ->  (response: OpenWeatherResponse?, error: String?) {
+    func fetchWeatherFor(_ city: String, _ stateCode: String?, _ country: String, _ isFahrenheit: Bool) async ->  (response: OpenWeatherResponse?, error: String?) {
         
         if key.isEmpty {
             key = loadAPIKey() ?? ""
@@ -25,7 +25,7 @@ class GetWeatherService: ObservableObject {
             return (nil, message)
         }
         
-        let response = await service.getCityWeather(city: city, countryCode: country, isFarenheit: isFarenheit, apiKey: key)
+        let response = await service.getCityWeather(name: city, stateCode, country, isFahrenheit, apiKey: key)
         
         switch response.result {
         case let .success(response):
