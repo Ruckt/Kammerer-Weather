@@ -14,7 +14,7 @@ struct ContentView: View {
     @State var stateCode: String?
     @State var selectedCountryIndex = 0
     @State var selectedStateIndex = 0
-    @State var weatherData: OpenWeatherResponse?
+    @State var cityData: CityData?
     @State var shouldNavigate = false
     @State var isFahrenheit = true
     @State var errorMessage: String = ""
@@ -91,24 +91,20 @@ struct ContentView: View {
                     PrettyButton {
                         Task {
                             
-                            countryCode = countries[selectedCountryIndex].code
-                            if selectedCountryIndex == 0 {
-                                stateCode = states[selectedStateIndex].code
-                            } else {
-                                stateCode = nil
-                            }
+                            let codes = getCodes()
                             
-                            let package = await viewModel.fetchWeatherFor(city: cityName, stateCode, countryCode, isFahrenheit)
-                            if let wd = package.response {
-                                weatherData = wd
+                            let package = await viewModel.fetchWeatherFor(city: cityName, codes.state, codes.country, isFahrenheit)
+                            if let cd = package.cityData {
+                                cityData = cd
                                 shouldNavigate = true // Trigger navigation
                             } else if let message = package.error {
                                 errorMessage = message
                             }
                         }
                     }
-                    if let wd = weatherData {
-                        let detail = CityDetailVM(name: cityName, stateCode: stateCode, country: countryCode, isFarenheit: isFahrenheit, weatherData: wd, weatherService: viewModel.weatherService)
+                    if let cd = cityData {
+                        let detail = CityDetailVM(cityData: cd,
+                                                  weatherService: viewModel.weatherService)
                         
                         NavigationLink(destination: CityDetailsView(detail: detail), isActive: $shouldNavigate) {
                             EmptyView()
@@ -139,6 +135,20 @@ struct ContentView: View {
               }
             Spacer()
         }
+    }
+    
+    func getCodes() -> (country: String, state: String?) {
+        let country = countries[selectedCountryIndex].code
+        
+        let stateCode: String?
+        
+        if selectedCountryIndex == 0 {
+            stateCode = states[selectedStateIndex].code
+        } else {
+            stateCode = nil
+        }
+        
+        return (country, stateCode)
     }
 }
 

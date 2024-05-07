@@ -11,10 +11,12 @@
 		E82ADBF12BD0C11500A011FA /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82ADBF02BD0C11500A011FA /* ImageLoader.swift */; };
 		E82ADBF32BD0CF7300A011FA /* CityDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82ADBF22BD0CF7300A011FA /* CityDetailVM.swift */; };
 		E82ADC2D2BD9FDD700A011FA /* OpenWeatherServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82ADC2C2BD9FDD700A011FA /* OpenWeatherServiceMock.swift */; };
-		E82ADC2F2BDA03BB00A011FA /* PhiladelphiaMock.json in Resources */ = {isa = PBXBuildFile; fileRef = E82ADC2E2BDA03BB00A011FA /* PhiladelphiaMock.json */; };
-		E82ADC322BDA136B00A011FA /* PhiladelphiaMock.json in Resources */ = {isa = PBXBuildFile; fileRef = E82ADC2E2BDA03BB00A011FA /* PhiladelphiaMock.json */; };
+		E82ADC2F2BDA03BB00A011FA /* PhiladelphiaPAMock.json in Resources */ = {isa = PBXBuildFile; fileRef = E82ADC2E2BDA03BB00A011FA /* PhiladelphiaPAMock.json */; };
+		E82ADC322BDA136B00A011FA /* PhiladelphiaPAMock.json in Resources */ = {isa = PBXBuildFile; fileRef = E82ADC2E2BDA03BB00A011FA /* PhiladelphiaPAMock.json */; };
 		E8E2F1132BE1E2130011FD33 /* ContentViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E2F1122BE1E2130011FD33 /* ContentViewVM.swift */; };
 		E8E2F1152BE1F1EC0011FD33 /* States.csv in Resources */ = {isa = PBXBuildFile; fileRef = E8E2F1142BE1F1EC0011FD33 /* States.csv */; };
+		E8E2F1172BE9A4D80011FD33 /* PhiladelphiaMSMock.json in Resources */ = {isa = PBXBuildFile; fileRef = E8E2F1162BE9A4D80011FD33 /* PhiladelphiaMSMock.json */; };
+		E8E2F1182BE9A4D80011FD33 /* PhiladelphiaMSMock.json in Resources */ = {isa = PBXBuildFile; fileRef = E8E2F1162BE9A4D80011FD33 /* PhiladelphiaMSMock.json */; };
 		E8F2E4AF2BC9FBC400A139A1 /* Kammerer_WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4AE2BC9FBC400A139A1 /* Kammerer_WeatherApp.swift */; };
 		E8F2E4B12BC9FBC400A139A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2E4B02BC9FBC400A139A1 /* ContentView.swift */; };
 		E8F2E4B32BC9FBC600A139A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8F2E4B22BC9FBC600A139A1 /* Assets.xcassets */; };
@@ -50,9 +52,10 @@
 		E82ADBF02BD0C11500A011FA /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		E82ADBF22BD0CF7300A011FA /* CityDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailVM.swift; sourceTree = "<group>"; };
 		E82ADC2C2BD9FDD700A011FA /* OpenWeatherServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OpenWeatherServiceMock.swift; path = "Kammerer WeatherTests/OpenWeatherServiceMock.swift"; sourceTree = SOURCE_ROOT; };
-		E82ADC2E2BDA03BB00A011FA /* PhiladelphiaMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = PhiladelphiaMock.json; path = "Kammerer WeatherTests/PhiladelphiaMock.json"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		E82ADC2E2BDA03BB00A011FA /* PhiladelphiaPAMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = PhiladelphiaPAMock.json; path = "Kammerer WeatherTests/PhiladelphiaPAMock.json"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.json; };
 		E8E2F1122BE1E2130011FD33 /* ContentViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewVM.swift; sourceTree = "<group>"; };
 		E8E2F1142BE1F1EC0011FD33 /* States.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = States.csv; sourceTree = "<group>"; };
+		E8E2F1162BE9A4D80011FD33 /* PhiladelphiaMSMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = PhiladelphiaMSMock.json; path = "Kammerer WeatherTests/PhiladelphiaMSMock.json"; sourceTree = SOURCE_ROOT; };
 		E8F2E4AB2BC9FBC400A139A1 /* Kammerer Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kammerer Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F2E4AE2BC9FBC400A139A1 /* Kammerer_WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kammerer_WeatherApp.swift; sourceTree = "<group>"; };
 		E8F2E4B02BC9FBC400A139A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -148,7 +151,8 @@
 		E8F2E4BE2BC9FBC700A139A1 /* Kammerer WeatherTests */ = {
 			isa = PBXGroup;
 			children = (
-				E82ADC2E2BDA03BB00A011FA /* PhiladelphiaMock.json */,
+				E82ADC2E2BDA03BB00A011FA /* PhiladelphiaPAMock.json */,
+				E8E2F1162BE9A4D80011FD33 /* PhiladelphiaMSMock.json */,
 				E8F2E4BF2BC9FBC700A139A1 /* Kammerer_WeatherTests.swift */,
 				E82ADC2C2BD9FDD700A011FA /* OpenWeatherServiceMock.swift */,
 			);
@@ -312,11 +316,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8F2E4F42BCE104300A139A1 /* CountryCodes.csv in Resources */,
+				E8E2F1172BE9A4D80011FD33 /* PhiladelphiaMSMock.json in Resources */,
 				E8F2E4B62BC9FBC600A139A1 /* Preview Assets.xcassets in Resources */,
 				E8E2F1152BE1F1EC0011FD33 /* States.csv in Resources */,
 				E8F2E4F22BCCEC7C00A139A1 /* Secrets.plist in Resources */,
 				E8F2E4B32BC9FBC600A139A1 /* Assets.xcassets in Resources */,
-				E82ADC322BDA136B00A011FA /* PhiladelphiaMock.json in Resources */,
+				E82ADC322BDA136B00A011FA /* PhiladelphiaPAMock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +329,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E82ADC2F2BDA03BB00A011FA /* PhiladelphiaMock.json in Resources */,
+				E82ADC2F2BDA03BB00A011FA /* PhiladelphiaPAMock.json in Resources */,
+				E8E2F1182BE9A4D80011FD33 /* PhiladelphiaMSMock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

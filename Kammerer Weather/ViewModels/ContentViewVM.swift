@@ -7,6 +7,19 @@
 
 import Foundation
 
+struct CityData {
+    let city: String
+    let state: String?
+    let country: String
+    let isFahrenheit: Bool
+    
+    let mainDescription: String
+    let description: String
+    let icon: String
+    
+    let weatherData: OpenWeatherResponse
+}
+
 class ContentViewVM: ObservableObject{
     
     var weatherService: GetWeatherService
@@ -16,7 +29,7 @@ class ContentViewVM: ObservableObject{
     }
     
     @MainActor
-    func fetchWeatherFor(city: String, _ stateCode: String?, _ countryCode: String, _ isFahrenheit: Bool) async -> (response: OpenWeatherResponse?, error: String?) {
+    func fetchWeatherFor(city: String, _ stateCode: String?, _ countryCode: String, _ isFahrenheit: Bool) async -> (cityData: CityData?, error: String?) {
         
         guard !city.isEmpty
         else {
@@ -26,8 +39,16 @@ class ContentViewVM: ObservableObject{
         
         let package = await weatherService.fetchWeatherFor(city, stateCode, countryCode, isFahrenheit)
         if let wd = package.response {
-    
-            return (wd, nil)
+            let cd = CityData(city: city,
+                              state: stateCode,
+                              country: countryCode,
+                              isFahrenheit: isFahrenheit,
+                              mainDescription: wd.weather[0].main,
+                              description: wd.weather[0].description,
+                              icon: wd.weather[0].icon,
+                              weatherData: wd)
+                
+            return (cd, nil)
         } else if let message = package.error {
             return (nil, message)
         } else {
